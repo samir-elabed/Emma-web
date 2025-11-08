@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emna Naturals - Premium Organic Beauty Products</title>
+    <meta name="description" content="Transform your hair and skin with Emna Naturals' premium organic beauty products. 100% natural ingredients, eco-friendly, and cruelty-free.">
+    <meta name="keywords" content="organic beauty, natural hair care, organic skincare, natural beauty products, hair cream, hair mask, organic soap">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://dhgf5mcbrms62.cloudfront.net/63685003/image-text-YC6qDi/MupaLBK-200x200.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ecwid Integration Scripts -->
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?63685003&data_platform=code&data_date=2025-11-08" charset="utf-8"></script>
+    <script type="text/javascript">
+        // Enhanced Ecwid configuration
+        window.ec = window.ec || {};
+        window.ec.config = window.ec.config || {};
+        window.ec.config.store_main_page_url = window.location.href;
+        window.ec.config.baseUrl = window.location.href;
+        
+        // Show Add to Bag buttons instead of Buy Now
+        window.ec.config.enable_catalog_on_one_page = false;
+        window.ec.config.product_details_show_product_name = true;
+        window.ec.config.product_details_show_breadcrumbs = true;
+        window.ec.config.product_details_show_product_sku = false;
+        window.ec.config.product_details_show_in_stock_label = true;
+        window.ec.config.product_details_show_number_of_items_in_stock = false;
+        window.ec.config.product_details_show_qty = true;
+        window.ec.config.show_footer_menu = true;
+        window.ec.config.show_breadcrumbs = true;
+        
+        xProductBrowser(
+            "categoriesPerRow=3",
+            "views=grid(20,3) list(60) table(60)",
+            "categoryView=grid",
+            "searchView=list",
+            "id=my-store-63685003",
+            "defaultProductId=0",
+            "responsive=yes"
+        );
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #1a3b2e;
+            --secondary-green: #2d5a42;
+            --accent-gold: #d4af37;
+            --light-green: #e8f5e8;
+            --cream: #faf8f5;
+            --gray-50: #fafafa;
+            --gray-100: #f5f5f5;
+            --gray-600: #757575;
+            --gray-800: #424242;
+            --gray-900: #212121;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--gray-800);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header with Cart */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(26, 59, 46, 0.1);
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: padding 0.3s ease;
+        }
+
+        header.scrolled nav {
+            padding: 16px 0;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            letter-spacing: -0.02em;
+            cursor: pointer;
+        }
+
+        .nav-center {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-center a {
+            color: var(--gray-800);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: -0.01em;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-center a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-center a:hover::after {
+            width: 100%;
+        }
+
+        .nav-center a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Shopping Cart Button */
+        .cart-button {
+            position: relative;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(26, 59, 46, 0.15);
+        }
+
+        .cart-button:hover {
+            background: var(--secondary-green);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(26, 59, 46, 0.2);
+        }
+
+        .cart-icon {
+            font-size: 1.2rem;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--accent-gold);
+            color: var(--primary-green);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 2px solid white;
+            animation: bounce 0.5s ease;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .cart-count.hidden {
+            display: none;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--cream) 0%, #f8f6f0 100%);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.25rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .hero-text .highlight {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 2.5rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-green);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: -0.01em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(26, 59, 46, 0.15);
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-green);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(26, 59, 46, 0.2);
+        }
+
+        .btn-secondary {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 16px 24px;
+            border: 2px solid var(--primary-green);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-showcase {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(26, 59, 46, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-badge {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            background: var(--accent-gold);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 0;
+            background: var(--light-green);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(26, 59, 46, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(26, 59, 46, 0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 48px rgba(26, 59, 46, 0.12);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--light-green);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Products Section - Enhanced for Ecwid */
+        .products {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        /* Ecwid Store Styling */
+        #my-store-63685003 {
+            margin: 0 auto;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        /* Make Ecwid Fully Responsive */
+        .ecwid-productBrowser {
+            max-width: 100% !important;
+        }
+
+        .ecwid .ec-store {
+            max-width: 100% !important;
+        }
+
+        .ecwid .grid-product {
+            margin-bottom: 2rem !important;
+        }
+
+        /* Custom Ecwid Overrides for Branding */
+        .ecwid .ecwid-productBrowser {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        .ecwid .ecwid-productBrowser-head {
+            margin-bottom: 2rem !important;
+        }
+
+        .ecwid .grid-product__title,
+        .ecwid .grid-product__title-inner {
+            font-family: 'Playfair Display', serif !important;
+            color: var(--primary-green) !important;
+            font-weight: 600 !important;
+        }
+
+        /* Style Add to Bag / Add to Cart buttons */
+        .ecwid .form-control--button,
+        .ecwid .form-control--primary,
+        .ecwid button.form-control--button,
+        .ecwid .grid-product__buy-now,
+        .ecwid .form-control__button--add-to-bag,
+        .ecwid .details-product-purchase__add-to-bag {
+            background: var(--primary-green) !important;
+            border: none !important;
+            border-radius: 10px !important;
+            transition: all 0.3s ease !important;
+            font-weight: 600 !important;
+            padding: 12px 24px !important;
+            color: white !important;
+        }
+
+        .ecwid .form-control--button:hover,
+        .ecwid .form-control--primary:hover,
+        .ecwid .grid-product__buy-now:hover,
+        .ecwid .form-control__button--add-to-bag:hover,
+        .ecwid .details-product-purchase__add-to-bag:hover {
+            background: var(--secondary-green) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 12px rgba(26, 59, 46, 0.3) !important;
+        }
+
+        .ecwid .grid-product__price,
+        .ecwid .ec-price-item {
+            color: var(--primary-green) !important;
+            font-weight: 600 !important;
+            font-size: 1.2rem !important;
+        }
+
+        /* Product cards styling */
+        .ecwid .grid-product__wrap {
+            border-radius: 20px !important;
+            overflow: hidden !important;
+            transition: all 0.3s ease !important;
+            border: 1px solid var(--gray-100) !important;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+        }
+
+        .ecwid .grid-product__wrap:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 12px 32px rgba(26, 59, 46, 0.12) !important;
+        }
+
+        /* Make product images look better */
+        .ecwid .grid-product__image {
+            border-radius: 16px !important;
+            overflow: hidden !important;
+        }
+
+        /* Responsive grid adjustments */
+        @media (max-width: 768px) {
+            .ecwid .grid-product {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        /* Category navigation */
+        .ecwid .ec-breadcrumbs {
+            margin-bottom: 2rem !important;
+        }
+
+        /* Search and filters */
+        .ecwid .ec-store__content-wrapper {
+            padding: 0 !important;
+        }
+
+        /* Product details page */
+        .ecwid .product-details {
+            padding: 2rem !important;
+            border-radius: 20px !important;
+        }
+
+        .ecwid .product-details__product-title {
+            font-family: 'Playfair Display', serif !important;
+            color: var(--primary-green) !important;
+            font-size: 2rem !important;
+        }
+
+        /* Cart widget in header integration */
+        .ecwid .ec-cart-widget {
+            display: none !important; /* Hide default cart widget since we have custom one */
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 8rem 0;
+            background: var(--gray-50);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+            position: relative;
+            border: 1px solid var(--gray-100);
+        }
+
+        .testimonial-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-800);
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--light-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--primary-green);
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            opacity: 0.3;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 0;
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .contact .section-header h2,
+        .contact .section-header p {
+            color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-form h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .submit-button {
+            background: var(--accent-gold);
+            color: var(--primary-green);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: #c19b26;
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+                text-align: center;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-center {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cart-button span:not(.cart-count) {
+                display: none;
+            }
+
+            .cart-button {
+                padding: 12px 16px;
+            }
+        }
+
+        /* Animation utilities */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--gray-600);
+        }
+
+        .spinner {
+            border: 3px solid var(--light-green);
+            border-top: 3px solid var(--primary-green);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">EMNA NATURALS</div>
+            
+            <ul class="nav-center">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Shopping Cart Button -->
+                <button class="cart-button" id="cartButton" onclick="Ecwid.Cart.open()">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count hidden" id="cartCount">0</span>
+                </button>
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Pure Beauty, <span class="highlight">Naturally Crafted</span></h1>
+                    <p class="subtitle">Transform your hair and skin with our premium organic products, carefully formulated from nature's finest ingredients for radiant, healthy beauty.</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#products" class="btn-primary">Explore Products</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <img src="https://dhgf5mcbrms62.cloudfront.net/63685003/image-text-YC6qDi/MupaLBK-200x200.jpg" alt="Premium Organic Hair Care Product" class="product-image">
+                        <div class="floating-badge">100% Organic</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>5000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>100%</h3>
+                    <p>Organic Ingredients</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>15+</h3>
+                    <p>Premium Products</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>4.9★</h3>
+                    <p>Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Emna Naturals</h2>
+                <p>We're committed to delivering the highest quality organic beauty products that nurture your skin and hair naturally</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌿</div>
+                    <h3>100% Organic</h3>
+                    <p>Every ingredient is carefully sourced from certified organic farms, ensuring the purest and most effective natural beauty solutions.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✨</div>
+                    <h3>Premium Quality</h3>
+                    <p>Our products undergo rigorous quality testing and are crafted in small batches to maintain exceptional standards and potency.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💚</div>
+                    <h3>Sustainable Beauty</h3>
+                    <p>Eco-conscious packaging and cruelty-free practices ensure your beauty routine supports both you and the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECWID STORE SECTION -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Product Collection</h2>
+                <p>Discover our range of premium organic beauty products designed to enhance your natural radiance</p>
+            </div>
+            
+            <!-- Loading State -->
+            <div class="loading" id="storeLoading">
+                <div class="spinner"></div>
+                <p>Loading our beautiful products...</p>
+            </div>
+            
+            <!-- Ecwid Store Widget -->
+            <div id="my-store-63685003"></div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Love Stories</h2>
+                <p>Real experiences from our valued customers who've transformed their beauty routine with Emna Naturals</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial fade-in">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">I've used the hair cream every other day for three weeks and the results are amazing: less hair loss, shinier hair than before. I highly recommend this cream! Emna was so kind to send an organic soap as a gift which worked wonders for my son's eczema.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rym Chhibi</h4>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Amazing hair mask! Really worked and couldn't be anymore happier. Really authentic, organic and natural. The quality is exceptional and the results speak for themselves.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Siwar Dridi</h4>
+                            <p>Birmingham, UK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">I have really dry and damaged hair and this product worked wonders for me. Smells great and is a perfect formula. Thank you Emna for creating such effective products!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">H</div>
+                        <div class="author-info">
+                            <h4>Humera F.</h4>
+                            <p>Yorkshire, UK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Your soap gives the skin an even radiance and a "baby's skin" effect. I was touched by the fineness and originality of your product. The packaging is beautiful and the results are incredible!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Z</div>
+                        <div class="author-info">
+                            <h4>Zina B.</h4>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Ready to transform your beauty routine? Contact us for personalized recommendations or custom orders</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Our Studio</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <strong>Address</strong><br>
+                            Swan Street, Swan Court Flat 4<br>
+                            TW7 6XW Isleworth<br>
+                            Greater London, United Kingdom
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            hello@emnanaturals.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📱</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +44 (0) 20 8567 1234
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🕒</div>
+                        <div>
+                            <strong>Business Hours</strong><br>
+                            Mon - Fri: 9:00 AM - 6:00 PM<br>
+                            Sat: 10:00 AM - 4:00 PM
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Swan+street%2C+Swan+Court+Flat+4%0ATW76XW+Isleworth%0AGreater+London%0AUnited+Kingdom" 
+                           style="color: var(--accent-gold); text-decoration: underline; font-weight: 600;">
+                           Get Directions →
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product">Interested Product</label>
+                            <select id="product" name="product" required>
+                                <option value="">Select a product</option>
+                                <option value="Hair Cream">Intensive Hair Cream</option>
+                                <option value="Hair Mask">Revitalizing Hair Mask</option>
+                                <option value="Organic Soap">Gentle Organic Soap</option>
+                                <option value="Skincare Set">Skincare Essentials Set</option>
+                                <option value="Custom Order">Custom Order</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your hair/skin concerns or ask any questions..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Emna Naturals</h4>
+                    <p>Premium organic beauty products crafted with love and care. Transform your beauty routine with nature's finest ingredients.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <p><a href="#products">Hair Care</a></p>
+                    <p><a href="#products">Skin Care</a></p>
+                    <p><a href="#products">Organic Soaps</a></p>
+                    <p><a href="#products">Gift Sets</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <p><a href="#contact">Contact Us</a></p>
+                    <p><a href="#testimonials">Reviews</a></p>
+                    <p><a href="#">Shipping Info</a></p>
+                    <p><a href="#">Return Policy</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Newsletter</a></p>
+                    <p><a href="mailto:hello@emnanaturals.com">Email Us</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Emna Naturals. All rights reserved. Made with 💚 for natural beauty.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Ecwid Integration with Cart Updates
+        window.ec = window.ec || {};
+        window.ec.config = window.ec.config || {};
+        window.ec.config.storefrontUrls = window.ec.config.storefrontUrls || {};
+        window.ec.config.storefrontUrls.cleanUrls = true;
+        
+        // Force show "Add to Cart" instead of "Buy Now"
+        window.ec.config.custom_js_url = null;
+        window.ec.storefront = window.ec.storefront || {};
+        
+        // Listen for Ecwid page loaded
+        Ecwid.OnPageLoaded = function(page) {
+            console.log('Ecwid page loaded:', page.type);
+            
+            // Update button text if needed
+            setTimeout(function() {
+                const buyButtons = document.querySelectorAll('.grid-product__buy-now, .form-control--primary');
+                buyButtons.forEach(button => {
+                    if (button.textContent.toLowerCase().includes('buy now')) {
+                        button.textContent = button.textContent.replace(/buy now/gi, 'Add to Cart');
+                    }
+                });
+            }, 500);
+        };
+
+        // Update cart count when Ecwid cart changes
+        function updateCartCount() {
+            if (typeof Ecwid !== 'undefined' && Ecwid.Cart) {
+                Ecwid.Cart.get(function(cart) {
+                    const cartCount = document.getElementById('cartCount');
+                    const totalItems = cart.productsQuantity || 0;
+                    
+                    if (totalItems > 0) {
+                        cartCount.textContent = totalItems;
+                        cartCount.classList.remove('hidden');
+                        // Trigger bounce animation
+                        cartCount.style.animation = 'none';
+                        setTimeout(() => {
+                            cartCount.style.animation = 'bounce 0.5s ease';
+                        }, 10);
+                    } else {
+                        cartCount.classList.add('hidden');
+                    }
+                });
+            }
+        }
+
+        // Listen for Ecwid cart updates
+        Ecwid.OnCartChanged = function(cart) {
+            updateCartCount();
+            console.log('Cart updated:', cart.productsQuantity, 'items');
+        };
+
+        // Initialize cart count when Ecwid loads
+        Ecwid.OnAPILoaded = function() {
+            console.log('Ecwid API Loaded');
+            updateCartCount();
+            
+            // Hide loading spinner
+            const loadingElement = document.getElementById('storeLoading');
+            if (loadingElement) {
+                loadingElement.style.display = 'none';
+            }
+        };
+
+        // Update cart on page load
+        window.addEventListener('load', function() {
+            setTimeout(updateCartCount, 1000);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.classList.remove('scrolled');
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const firstName = formData.get('firstName');
+            const product = formData.get('product');
+            
+            const button = this.querySelector('.submit-button');
+            const originalText = button.textContent;
+            
+            button.textContent = 'Sending...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.textContent = 'Message Sent! ✓';
+                button.style.background = '#27ae60';
+                
+                setTimeout(() => {
+                    this.reset();
+                    button.textContent = originalText;
+                    button.style.background = 'var(--accent-gold)';
+                    button.disabled = false;
+                    
+                    alert(`Thank you ${firstName}! We've received your inquiry about ${product || 'our products'} and will get back to you within 24 hours.`);
+                }, 2000);
+            }, 1500);
+        });
+
+        // Add loading animation for stats
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-item h3');
+            
+            statNumbers.forEach(stat => {
+                const finalNumber = stat.textContent;
+                const isNumber = !isNaN(parseInt(finalNumber));
+                
+                if (isNumber) {
+                    const target = parseInt(finalNumber);
+                    let current = 0;
+                    const increment = target / 100;
+                    
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                            stat.textContent = Math.ceil(current) + (finalNumber.includes('+') ? '+' : '');
+                            setTimeout(updateCounter, 20);
+                        } else {
+                            stat.textContent = finalNumber;
+                        }
+                    };
+                    
+                    const statObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                updateCounter();
+                                statObserver.unobserve(entry.target);
+                            }
+                        });
+                    });
+                    
+                    statObserver.observe(stat.closest('.stat-item'));
+                }
+            });
+        }
+
+        animateStats();
+
+        // Mobile menu toggle (placeholder for future implementation)
+        function toggleMobileMenu() {
+            alert('Mobile menu coming soon! Please use the navigation on desktop or scroll to sections.');
+        }
+
+        // Product image hover effect
+        const productImage = document.querySelector('.product-image');
+        if (productImage) {
+            productImage.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) rotate(2deg)';
+            });
+            
+            productImage.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
+
+        // Console log for debugging
+        console.log('Emna Naturals Website Loaded Successfully');
+        console.log('Ecwid Store ID: 63685003');
+        console.log('Cart integration active - add products to see cart count update!');
+    </script>
+</body>
+</html>
